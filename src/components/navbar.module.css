@@ -1,0 +1,51 @@
+.nav{
+    background: #fee101;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.nav:hover{
+    background-color: #fee101;
+}
+.navItem{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    width: 120px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+}
+.navItem:hover{
+    background-color: #edd300;
+    color: black;
+}
+.navLinkBox{
+    height: 60px;
+    width: 120px;
+    display: grid;
+    place-items: center;
+}
+.navMenu{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    margin-right: 2rem;
+}
+.navHeader{
+    color: #000;
+}
+.logo{
+    height: 70px;
+    width: auto;
+}
