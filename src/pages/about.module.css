@@ -1,111 +1,89 @@
-.map{
-    padding-top: 22px;
-    padding-bottom: 46px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 35%;
-    height: auto;
-    float: left;
-    padding-left: 10vw;
-    padding-right: 10vw;
+.mapContainer {
+  padding-bottom: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
-.room{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 50vw;
-    height: auto;
-    padding: 0;
+.map {
+  display: block;
+  width: 50%;
 }
-.roomText{
+.map img {
+  width: 100%;
+}
+.mapTextContainer {
+  width: calc(50% - 50px);
+}
+.mapTextBold {
+  font-weight: bold;
+  font-size: 23px;
+  letter-spacing: 10px;
+  margin: 0;
+}
+.mapText {
+  font-size: 20px;
+  margin-left: 10px;
+  line-height: 43px;
+  letter-spacing: 10px;
+}
+.eyeCatch {
+  position: relative;
+  margin: 50px 0 150px 100px;
+}
+
+.eyeCatch img {
+  width: 100%;
+}
+.roomText {
+  z-index: 1;
+  font-size: 28px;
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+.roomTextBox {
+  position: absolute;
+  bottom: -80px;
+  left: -100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .eyeCatch {
+    margin: 50px 0 120px 0;
+  }
+  .roomText {
     z-index: 1;
-    font-size: 17px;
+    font-size: calc(1vw * 4);
     letter-spacing: 3px;
-    line-height: 30px;
-}
-.roomTextBox{
+    line-height: 1.8;
+  }
+  .roomTextBox {
     position: absolute;
-    bottom: 72px;
-    left: 21.5vw;
-}
-.mapContainer{
-    padding-bottom: 150px;
+    bottom: -20vw;
+    left: 10vw;
+  }
+  .mapContainer {
     width: 100%;
-}
-.mapTextBold{
-    font-weight: bold; 
-    font-size: 23px; 
-    margin-left: 10px;
-    padding-top: 60px;
-    line-height: 43px;
+    display: block;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .map {
+    width: 100%;
+  }
+  .mapTextContainer {
+    width: 100%;
+  }
+  .mapTextBold {
+    font-weight: bold;
+    font-size: 18px;
     letter-spacing: 10px;
-}
-.mapText{
-    font-size: 20px;
+    margin-top: 20px;
+  }
+  .mapText {
+    font-size: 14px;
     margin-left: 10px;
-    line-height: 43px;
+    line-height: 1.5;
     letter-spacing: 10px;
-}
-@media only screen and (max-width: 1545px){
-    .mapTextBold{
-        font-size: 20px; 
-        padding-top: 50px;
-        line-height: 30px;
-        letter-spacing: 8px;
-    }
-    .mapText{
-        font-size: 18px;
-        margin-left: 10px;
-        line-height: 30px;
-        letter-spacing: 8px;
-    }
-}
-@media only screen and (max-width: 950px){
-    .mapTextBold{
-        font-size: 18px; 
-        margin-left: 10px;
-        padding-top: 20px;
-        line-height: 25px;
-        letter-spacing: 6px;
-    }
-    .mapText{
-        font-size: 17px;
-        margin-left: 10px;
-        line-height: 25px;
-        letter-spacing: 6px;
-    }
-    .mapContainer{
-        padding-bottom: 70px;
-    }
-}
-@media only screen and (max-width: 725px){
-    .room{
-        width: 100%;
-    }
-    .roomTextBox{
-        left: 16px;
-    }
-    .mapContainer{
-        padding-bottom: 50px;
-        width: 100%;
-    }
-    .map{
-        padding-left: 0px;
-        padding-right: 0px;
-        width: 100%;
-    }
-    .mapTextBold{
-        font-size: 18px; 
-        margin-left: 10px;
-        padding-top: 0px;
-        line-height: normal;
-        letter-spacing: normal;
-    }
-    .mapText{
-        font-size: 17px;
-        margin-left: 10px;
-        line-height: normal;
-        letter-spacing: normal;
-    }
+  }
 }

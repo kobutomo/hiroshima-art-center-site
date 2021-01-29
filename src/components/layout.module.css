@@ -1,15 +1,14 @@
 .container {
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
+  width: 1000px;
+  margin: 0 auto;
 }
-.bottom{
+.bottom {
   display: inline-grid;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
 }
-.bottomContainer{
+.bottomContainer {
   display: grid;
   grid-template-columns: 250px 250px 250px;
   width: 100%;
@@ -17,17 +16,23 @@
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 725px){
-  .bottom{
+@media only screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    box-sizing: content-box;
+  }
+  .bottom {
     display: inline-grid;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
   }
-  .bottomContainer{
+  .bottomContainer {
     display: grid;
-    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: 33% 33% 33%;
     width: 100%;
+    max-width: 450px;
     position: relative;
     justify-content: center;
     align-items: center;
