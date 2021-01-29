@@ -1,0 +1,111 @@
+.map{
+    padding-top: 22px;
+    padding-bottom: 46px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 35%;
+    height: auto;
+    float: left;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.room{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50vw;
+    height: auto;
+    padding: 0;
+}
+.roomText{
+    z-index: 1;
+    font-size: 17px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+.roomTextBox{
+    position: absolute;
+    bottom: 72px;
+    left: 21.5vw;
+}
+.mapContainer{
+    padding-bottom: 150px;
+    width: 100%;
+}
+.mapTextBold{
+    font-weight: bold; 
+    font-size: 23px; 
+    margin-left: 10px;
+    padding-top: 60px;
+    line-height: 43px;
+    letter-spacing: 10px;
+}
+.mapText{
+    font-size: 20px;
+    margin-left: 10px;
+    line-height: 43px;
+    letter-spacing: 10px;
+}
+@media only screen and (max-width: 1545px){
+    .mapTextBold{
+        font-size: 20px; 
+        padding-top: 50px;
+        line-height: 30px;
+        letter-spacing: 8px;
+    }
+    .mapText{
+        font-size: 18px;
+        margin-left: 10px;
+        line-height: 30px;
+        letter-spacing: 8px;
+    }
+}
+@media only screen and (max-width: 950px){
+    .mapTextBold{
+        font-size: 18px; 
+        margin-left: 10px;
+        padding-top: 20px;
+        line-height: 25px;
+        letter-spacing: 6px;
+    }
+    .mapText{
+        font-size: 17px;
+        margin-left: 10px;
+        line-height: 25px;
+        letter-spacing: 6px;
+    }
+    .mapContainer{
+        padding-bottom: 70px;
+    }
+}
+@media only screen and (max-width: 725px){
+    .room{
+        width: 100%;
+    }
+    .roomTextBox{
+        left: 16px;
+    }
+    .mapContainer{
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    .map{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+    .mapTextBold{
+        font-size: 18px; 
+        margin-left: 10px;
+        padding-top: 0px;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+    .mapText{
+        font-size: 17px;
+        margin-left: 10px;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+}
