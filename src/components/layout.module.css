@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: 250px 250px 250px;
   width: 100%;
+  margin: 0 125px;
   position: relative;
   justify-content: center;
   align-items: center;
